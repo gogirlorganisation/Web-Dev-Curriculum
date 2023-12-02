@@ -169,6 +169,7 @@ nav a {
 /* Section 9 design  */
 .section-09{
     background-image: url('../Image/Homepage-Accessories.jpg');
+    padding: 2% 2%!important;
 }
 
 /* Footer design  */
@@ -176,9 +177,8 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 1180%;
     width: 100%;
+    margin-top: 10%;
 }
 
 footer a {
