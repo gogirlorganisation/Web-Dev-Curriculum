@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sweet Arithmetic Calculator</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <h1>Arithmetic Calculator</h1>
+
+    <label for="num1">Enter first number:</label>
+    <input type="number" id="num1">
+
+    <br>
+
+    <label for="num2">Enter second number:</label>
+    <input type="number" id="num2">
+
+    <br>
+
+    <div class="button-container">
+        <button onclick="
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var sum = num1 + num2;
+            document.getElementById('result').textContent = 'Sum: ' + sum;
+        ">Add</button>
+
+        <button onclick="
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var product = num1 * num2;
+            document.getElementById('result').textContent = 'Product: ' + product;
+        ">Multiply</button>
+
+        <button onclick="
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var quotient = num1 / num2;
+            document.getElementById('result').textContent = 'Quotient: ' + quotient;
+        ">Divide</button>
+
+        <button onclick="
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+
+            var difference = num1 - num2;
+            document.getElementById('result').textContent = 'Difference: ' + difference;
+        ">Subtract</button>
+    </div>
+
+    <h2 id="result">Result</h2>
+
+</body>
+</html>
