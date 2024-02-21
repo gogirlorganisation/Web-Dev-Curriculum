@@ -1,0 +1,33 @@
+<html>
+	<script>
+        // Assume the ice cream parlor has these toppings available
+        var chocolateSyrupAvailable = true;
+        var sprinklesAvailable = false;
+        var caramelSauceAvailable = true;
+
+        // Order vanilla ice cream with toppings
+        var order = "vanilla ice cream";
+        console.log("Order: ", order)
+
+        // Check if chocolate syrup is available
+        if (chocolateSyrupAvailable == true) {
+            console.log("Topping: Chocolate Syrup")
+        }
+
+        // If chocolate syrup is not available, check if sprinkles are available
+        else if (sprinklesAvailable == true) {
+            console.log("Topping: Rainbow Sprinkles")
+        }
+
+        // If sprinkles are not available, check if caramel sauce is available
+        else if (caramelSauceAvailable == true) {
+            console.log("Topping: Caramel Sauce")
+        }
+
+        // If none of the toppings are available
+        else {
+            console.log("Topping: No Toppings Available")
+        }
+        
+    </script>
+</html>
