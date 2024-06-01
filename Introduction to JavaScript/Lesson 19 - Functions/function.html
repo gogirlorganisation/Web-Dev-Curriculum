@@ -1,0 +1,36 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Cart</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart</h1>
+        <div class="shop">
+            <h2>Items</h2>
+            <div class="item">
+                <span>Apple ($1.00 each)</span>
+                <input type="number" id="appleQuantity" min="0" value="0">
+                <button onclick="addToCart('apple', 1.00)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <span>Banana ($0.50 each)</span>
+                <input type="number" id="bananaQuantity" min="0" value="0">
+                <button onclick="addToCart('banana', 0.50)">Add to Cart</button>
+            </div>
+            <div class="item">
+                <span>Orange ($0.75 each)</span>
+                <input type="number" id="orangeQuantity" min="0" value="0">
+                <button onclick="addToCart('orange', 0.75)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="totalPrice">0.00</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
