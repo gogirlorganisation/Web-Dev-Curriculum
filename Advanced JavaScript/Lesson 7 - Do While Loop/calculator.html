@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Try It Yourself: Simple Calculator</title>
+</head>
+<body>
+    <script>
+        let continueCalculating;
+
+        // Step 1-6: Loop to perform calculations until the user decides to stop
+        do {
+            // Prompt the user to enter the first number
+            let firstNumber = parseFloat(prompt("Enter the first number:"));
+
+            // Prompt the user to enter the operation
+            let operation = prompt("Enter the operation (+, -, *, /):");
+
+            // Prompt the user to enter the second number
+            let secondNumber = parseFloat(prompt("Enter the second number:"));
+
+            let result;
+
+            // Step 4: Perform the operation
+            switch (operation) {
+                case "+":
+                    result = firstNumber + secondNumber;
+                    break;
+                case "-":
+                    result = firstNumber - secondNumber;
+                    break;
+                case "*":
+                    result = firstNumber * secondNumber;
+                    break;
+                case "/":
+                    result = firstNumber / secondNumber;
+                    break;
+                default:
+                    alert("Invalid operation!");
+                    continue; // Skip to the next iteration of the loop
+            }
+
+            // Step 5: Display the result
+            alert("The result is: " + result);
+
+            // Ask if the user wants to perform another calculation
+            continueCalculating = confirm("Do you want to perform another calculation?");
+        } while (continueCalculating);
+
+        // Step 7: Display goodbye message
+        alert("Goodbye! Hope you enjoyed using the calculator.");
+    </script>
+</body>
+</html>
