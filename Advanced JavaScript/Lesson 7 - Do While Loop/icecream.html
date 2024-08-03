@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ice Cream Picker</title>
+</head>
+<body>
+    <script>
+        let iceCreamFlavours = ["Vanilla", "Chocolate", "Strawberry", "Mint", "Cookie Dough"];
+        let flavour;
+        let more = true;
+
+        do {
+            // Display available ice cream flavours and prompt for choice
+            let flavourList = iceCreamFlavours.join(", ");
+            flavour = prompt("Available flavours: " + flavourList + ". Please enter your choice:");
+
+            // Check if the entered flavour is valid
+            if (iceCreamFlavours.includes(flavour)) {
+                // Simulate getting one scoop
+                alert("You get one scoop of " + flavour);
+
+                // Ask if user liked it and wants more
+                more = confirm("Did you like it? Do you want one more scoop? Click OK for Yes, Cancel for No");
+            } else {
+                alert("Invalid flavour. Please choose a valid flavour.");
+            }
+        } while (more);
+
+        alert("Thank you! Hope you enjoyed the ice cream.");
+    </script>
+</body>
+</html>
